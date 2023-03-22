@@ -8,7 +8,7 @@
 `roslaunch kobuki_keyop keyop.launch __ns:=locobot`
 
 ### For elevation Mapping Using LoCoBOt:
-'roslaunch interbotix_xslocobot_joy xslocobot_joy.launch robot_model:=locobot_wx200 launch_driver:=false'
-'roslaunch kobuki_keyop keyop.launch __ns:=locobot'
-Then run 'odom_to_pose.py'
+'roslaunch interbotix_xslocobot_joy xslocobot_joy.launch robot_model:=locobot_wx200 launch_driver:=false'   
+'roslaunch kobuki_keyop keyop.launch __ns:=locobot'     
+Then run 'odom_to_pose.py'    
 'roslaunch elevation_mapping_demos myrealsensetest.launch'

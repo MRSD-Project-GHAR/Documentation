@@ -18,7 +18,12 @@ roslaunch realsense2_camera rs_camera_ghar.launch
 roslaunch kimera_vio_ros kimera_vio_ros_realsense_IR.launch should_use_sim_time:=false
 ```
 
-4 .Run Kimera-Semantics online with Realsense:
+4. Run Semantic Segmetation Node (optional for now):
+```
+roslaunch seamntic_segmentation_ros segmentor.launch
+```
+
+5. Run Kimera-Semantics online with Realsense:
 ```
 roslaunch kimera_seamntics_ros kimera_metric_realsense.launch should_use_sim_time:=false
 ```
@@ -35,7 +40,12 @@ roslaunch kimera_vio_ros kimera_vio_ros_realsense_IR.launch should_use_sim_time:
 roslaunch kimera_seamntics_ros kimera_metric_realsense.launch should_use_sim_time:=true
 ```
 
-3. Run rosbags with `clock` parameter: 
+3. Run Semantic Segmetation Node (optional for now):
+```
+roslaunch seamntic_segmentation_ros segmentor.launch
+```
+
+4. Run rosbags with `clock` parameter: 
 ```
 rosbag play ${bagName}.bag --clock
 ```

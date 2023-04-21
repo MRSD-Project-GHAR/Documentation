@@ -20,5 +20,6 @@ Then run `odom_to_pose.py`
 > Make sure your laptop and xavier are connected to the same wifi newtork.
 > `ssh -X vfa@vfa`run this command on your laptop terminal to ssh into LocoBot
 > `roslaunch interbotix_xslocobot_nav xslocobot_nav.launch robot_model:=locobot_wx200 use_lidar:=true rtabmap_args:=-d` run this command to start SLAM
+> To open a new ssh'ed terminal run `gnome-terminal &` after doing ssh for the first time, and now you can just usr "ctrl+shift+t" to open a new terminal.
 > Open another ssh'ed terminal and run `roslaunch kobuki_keyop keyop.launch __ns:=locobot` for teleop
 > Open another ssh'ed terminal and run `roslaunch interbotix_xslocobot_descriptions remote_view.launch rviz_frame:=map`

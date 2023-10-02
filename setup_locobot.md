@@ -1,4 +1,5 @@
 ## ref link: https://www.trossenrobotics.com/docs/interbotix_xslocobots/ros_interface/index.html
+https://www.trossenrobotics.com/docs/interbotix_xslocobots/ros_packages/index.html
 
 ### To start communicating with the robot 
 `roslaunch interbotix_xslocobot_control xslocobot_control.launch robot_model:=locobot_wx200 use_base:=true use_camera:=true use_lidar:=false`
